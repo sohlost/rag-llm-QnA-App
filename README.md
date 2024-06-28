@@ -8,7 +8,7 @@ Ask questions to three most influential papers that have led to the rise of Gen-
 
 ## Demo
 
-[To see how to tool works check out](/assets)
+[To see how to tool works check out this link](/assets)
 
 
 
