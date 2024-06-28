@@ -8,7 +8,7 @@ Ask questions to three most influential papers that have led to the rise of Gen-
 
 
 
-## How to run the tool
+## How to run the tool (either you can run with docker or from the source)
 
 ### Run with Docker
 
