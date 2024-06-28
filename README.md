@@ -5,8 +5,8 @@ Ask questions to three most influential papers that have led to the rise of Gen-
 ## Demo
 
 See how the tool works:
-
-![Dropbox AI search tool demo](assets/dropbox-ai-search-tool.gif)
+(demo.gif)
+(demo1.mov)
 
 As you can see the LLM App enables AI-powered search from multiple unstructured documents like tax information from different countries, and indexes input data in real-time just after you upload files to the cloud storage.
 
