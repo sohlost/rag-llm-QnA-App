@@ -4,9 +4,8 @@ Ask questions to three most influential papers that have led to the rise of Gen-
 
 ## Demo
 
-See how the tool works:
-![](demo.gif)
-![](demo1.mov)
+[To see how to tool works check out](/assets)
+
 
 As you can see the LLM App enables AI-powered search from multiple unstructured documents like tax information from different countries, and indexes input data in real-time just after you upload files to the cloud storage.
 
