@@ -7,13 +7,12 @@ Ask questions to three most influential papers that have led to the rise of Gen-
 [To see how to tool works check out](/assets)
 
 
-As you can see the LLM App enables AI-powered search from multiple unstructured documents like tax information from different countries, and indexes input data in real-time just after you upload files to the cloud storage.
 
 ## How to run the tool
 
 ### Run with Docker
 
-1. Create `.env` file in the root directory of the project, copy and paste the below config. Replace the `OPENAI_API_TOKEN` configuration value with your key `{OPENAI_API_KEY}` and replace `DROPBOX_LOCAL_FOLDER_PATH` with a path where Dropbox folder is located `{REPLACE_WITH_DROPBOX_FOLDER_PATH}`. For example, if the current project folder is `DROPBOX-SEARCH-TOOL`, you navigate to the Dropbox path in the home directory: `../Dropbox/documents`. Other properties are optional to change and be default.
+1. Create `.env` file in the root directory of the project, copy and paste the below config. Replace the `OPENAI_API_TOKEN` configuration value with your key `{OPENAI_API_KEY}`. Other properties are optional to change and be default.
 
 ```bash
 OPENAI_API_TOKEN={OPENAI_API_KEY}
@@ -22,7 +21,7 @@ EMBEDDING_DIMENSION=1536
 MODEL_LOCATOR=gpt-3.5-turbo
 MAX_TOKENS=200
 TEMPERATURE=0.0
-DROPBOX_LOCAL_FOLDER_PATH={REPLACE_WITH_DROPBOX_RELATIVE_PATH}
+DROPBOX_LOCAL_FOLDER_PATH="./documents"
 ```
 
 2. From the project root folder, open your terminal and run `docker compose up`.
@@ -35,7 +34,7 @@ DROPBOX_LOCAL_FOLDER_PATH={REPLACE_WITH_DROPBOX_RELATIVE_PATH}
 1. Make sure that [Python](https://www.python.org/downloads/) 3.10 or above installed on your machine.
 2. Download and Install [Pip](https://pip.pypa.io/en/stable/installation/) to manage project packages.
 3. Create an [OpenAI](https://openai.com/) account and generate a new API Key: To access the OpenAI API, you will need to create an API Key. You can do this by logging into the [OpenAI website](https://openai.com/product) and navigating to the API Key management page.
-4. Use your Dropbox/OneDrive account.
+
 
 Then, follow the easy steps to install and get started using the sample app.
 
@@ -44,13 +43,13 @@ Then, follow the easy steps to install and get started using the sample app.
 This is done with the `git clone` command followed by the URL of the repository:
 
 ```bash
-git clone https://github.com/pathway-labs/dropbox-ai-chat
+git clone https://github.com/sohlost/rag-llm-QnA-App/
 ```
 
 Next,  navigate to the project folder:
 
 ```bash
-cd dropbox-ai-chat
+cd rag-llm-QnA-App
 ```
 
 #### Step 2: Set environment variables
@@ -66,20 +65,10 @@ EMBEDDING_DIMENSION=1536
 MODEL_LOCATOR=gpt-3.5-turbo
 MAX_TOKENS=200
 TEMPERATURE=0.0
-DROPBOX_LOCAL_FOLDER_PATH="../../../mnt/c/Users/bumur/Dropbox/documents"
+DROPBOX_LOCAL_FOLDER_PATH="./documents"
 ```
 
-Replace DROPBOX_LOCAL_FOLDER_PATH with your local Dropbox folder path and optionally, you customize other values.
-
-#### Step 3 (Optional): Create a new virtual environment
-
-Create a new virtual environment in the same folder and activate that environment:
-
-```bash
-python -m venv pw-env && source pw-env/bin/activate
-```
-
-#### Step 4: Install the app dependencies
+#### Step 3: Install the app dependencies
 
 Install the required packages:
 
@@ -87,7 +76,7 @@ Install the required packages:
 pip install --upgrade -r requirements.txt
 ```
 
-#### Step 5: Run the Pathway API
+#### Step 4: Run the App
 
 You start the application by running `main.py`:
 
@@ -95,7 +84,7 @@ You start the application by running `main.py`:
 python main.py
 ```
 
-#### Step 6: Run Streamlit UI
+#### Step 5: Run Streamlit UI
 
 You can run the UI separately by running Streamlit app
 `streamlit run ui.py` command. It connects to the Pathway's backend API automatically and you will see the UI frontend is running on your browser.
