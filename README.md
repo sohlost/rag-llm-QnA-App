@@ -12,14 +12,6 @@ As you can see the LLM App enables AI-powered search from multiple unstructured 
 
 ## How to run the tool
 
-There are 3 ways to run the app:
-
-### Run with Conda
-
-For a step-by-step walkthrough in real time (~7 mins) check out the video below:
-
-[![Thumbnail of YouTube walkthrough](assets/yt-thumbnail.png)](https://youtu.be/PbSAYHi5gnM?si=GAi3hYFTiJMO0EQH)
-
 ### Run with Docker
 
 1. Create `.env` file in the root directory of the project, copy and paste the below config. Replace the `OPENAI_API_TOKEN` configuration value with your key `{OPENAI_API_KEY}` and replace `DROPBOX_LOCAL_FOLDER_PATH` with a path where Dropbox folder is located `{REPLACE_WITH_DROPBOX_FOLDER_PATH}`. For example, if the current project folder is `DROPBOX-SEARCH-TOOL`, you navigate to the Dropbox path in the home directory: `../Dropbox/documents`. Other properties are optional to change and be default.
